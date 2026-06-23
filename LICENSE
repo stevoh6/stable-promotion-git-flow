@@ -1,0 +1,54 @@
+# License
+
+This repository uses dual licensing.
+
+## Documentation and workflow descriptions
+
+Documentation and workflow descriptions are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License**.
+
+Applies to:
+
+- `README.md`
+- `GIT_WORKFLOW.md`
+- `GIT_WORKFLOW_EXPLAINED.md`
+- `CONTRIBUTING.md`
+- `CHANGELOG.md`
+- `docs/**/*.md`
+- other prose, diagrams, explanations, and workflow descriptions
+
+License file:
+
+- [LICENSE-CC-BY-SA-4.0.md](LICENSE-CC-BY-SA-4.0.md)
+
+SPDX identifier:
+
+```text
+CC-BY-SA-4.0
+```
+
+## Source code, scripts, and automation tools
+
+All source code, scripts, and automation tools are licensed under the **MIT License**.
+
+Applies to:
+
+- `.github/workflows/*.yml`
+- shell snippets intended as reusable automation code
+- scripts
+- tooling files
+- other executable or automation-oriented source files
+
+License file:
+
+- [LICENSE-MIT](LICENSE-MIT)
+
+SPDX identifier:
+
+```text
+MIT
+```
+
+## Short statement
+
+Documentation and workflow descriptions are licensed under CC BY-SA 4.0.  
+All source code, scripts, and automation tools are licensed under the MIT License.

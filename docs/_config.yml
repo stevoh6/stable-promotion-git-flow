@@ -1,0 +1,10 @@
+title: Stable Promotion Git Flow
+description: A simple Git workflow for validated releases, clean history, and stable rollback.
+theme: minima
+markdown: kramdown
+plugins: []
+
+header_pages:
+  - index.md
+  - workflow.md
+  - explained.md
