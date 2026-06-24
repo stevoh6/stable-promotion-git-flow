@@ -6,8 +6,6 @@ permalink: /explained/
 
 # Stable Promotion Git Flow Explained
 
-AI-assisted editing was used solely to improve the clarity and readability of this document. The underlying process model, workflow design, decisions, and release strategy were developed independently by the author and are based on real-world practice and experience.
-
 ## TL;DR
 
 This repository uses a custom **Stable Promotion Git Flow**.

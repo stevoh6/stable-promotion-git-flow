@@ -9,8 +9,6 @@ Documentation and workflow descriptions are licensed under the **Creative Common
 Applies to:
 
 - `README.md`
-- `GIT_WORKFLOW.md`
-- `GIT_WORKFLOW_EXPLAINED.md`
 - `CONTRIBUTING.md`
 - `CHANGELOG.md`
 - `docs/**/*.md`

@@ -6,14 +6,6 @@ permalink: /workflow/
 
 # Stable Promotion Git Flow
 
-**Subtitle:** A simple Git workflow for validated releases, clean history, and stable rollback.  
-**Tagline:** Validate first. Promote cleanly. Roll back safely.
-
-**Author:** stevoh6  
-**Version:** 2026.06.23
-
-AI-assisted editing was used solely to improve the clarity and readability of this document. The underlying process model, workflow design, decisions, and release strategy were developed independently by the author and are based on real-world practice and experience.
-
 ## Purpose
 
 This repository uses **Stable Promotion Git Flow**, a simple Git workflow for solo developers and small teams that need:

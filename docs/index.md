@@ -80,7 +80,6 @@ reset/recreate staging for next release if needed
 
 - [Workflow Guide]({{ '/workflow/' | relative_url }}) — practical release flow, branch rules, and operational process.
 - [Design Rationale]({{ '/explained/' | relative_url }}) — why the workflow works this way and what trade-offs it makes.
-- [Commands]({{ '/commands/' | relative_url }}) — copy-paste Git commands for daily use.
 
 ## Author
 

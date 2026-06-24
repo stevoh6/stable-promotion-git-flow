@@ -78,7 +78,6 @@ reset/recreate staging for next release if needed
 
 - [Workflow Guide](docs/workflow.md) — operational workflow, rules, and commands.
 - [Design Rationale](docs/explained.md) — reasoning, trade-offs, and design principles.
-- [Commands cheatsheet](docs/commands.md) — compact command reference.
 
 ## Author
 
