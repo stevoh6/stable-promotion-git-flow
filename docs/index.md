@@ -6,15 +6,25 @@ permalink: /
 
 # Stable Promotion Git Flow
 
-**Subtitle:** A simple Git workflow for validated releases, clean history, and stable rollback.
+**A simple Git workflow for validated releases, clean history, and stable rollback.**
 
-**Tagline:** Validate first. Promote cleanly. Roll back safely.
+> Validate first. Promote cleanly. Roll back safely.
 
-Stable Promotion Git Flow is for solo developers and small teams who want **validated releases**, **clean history**, and **stable rollback**.
+Stable Promotion Git Flow is a lightweight Git workflow for solo developers and small teams who want to validate release content before promotion, keep production history clean, and preserve a stable rollback path.
 
-Created by **stevoh6**, based on more than decade of practical development, release, and production workflow experience.
+## Why This Is Written Down
 
-AI-assisted editing was used solely to improve the clarity and readability of this document. The underlying process model, workflow design, decisions, and release strategy were developed independently by the author and are based on real-world practice and experience.
+Some of these ideas are common in practical release work as internal habits, conventions, or release routines. This exact combination, including the small operational details that make it repeatable, is often not written down as a compact, reusable workflow.
+
+This document defines that specific variant and makes its trade-offs explicit. It combines release validation, clean production history, stable rollback, and selected operational details based on practical experience.
+
+The goal is to make the workflow easier to communicate, evaluate, and apply consistently.
+
+
+## Project repository
+
+[github.com/stevoh6/stable-promotion-git-flow](https://github.com/stevoh6/stable-promotion-git-flow)
+
 
 ## Core Flow
 
@@ -40,23 +50,43 @@ after stabilization, move release/stable to new tag
 reset/recreate staging for next release if needed
 ```
 
-## Rules
+## Main Rules
 
-- `feature/*` branches are created from `main` / `master`.
-- `release/stable` is captured before release work.
-- `staging/*` validates the release candidate.
-- `staging/*` is never merged into `main` / `master`.
-- Approved features are promoted directly into `main` / `master`.
-- Features are squashed by default before production promotion.
-- Large features may be split when that is safer.
-- The new release tag, or updated `main` / `master` state, is tested before production.
-- `release/stable` is moved only after production stabilization.
+1. Create `feature/*` branches from `main` / `master`.
+2. Before release work, create/reset `release/stable` from stable `main` / `master`.
+3. Merge features into `staging/vX.Y` for QA/UAT/release validation.
+4. Keep fixes on the original feature branch.
+5. Do not merge `staging/*` into `main` / `master`.
+6. Promote only approved features into `main` / `master`.
+7. Squash feature history by default before production promotion.
+8. Split large features into multiple logical commits when that is safer.
+9. Create release tags only from `main` / `master`.
+10. Deploy the new release tag, or the updated `main` / `master` state, to a test environment and quick-check it before production.
+11. Deploy the same verified release state to production.
+12. Move `release/stable` only after production stabilization.
+13. Reset or recreate `staging/*` for the next release cycle when needed.
+
+## What This Solves
+
+- Developers can commit freely on feature branches.
+- QA can validate multiple features together on a release branch.
+- `main` / `master` stays clean, readable, and production-focused.
+- Each completed feature becomes one production commit by default.
+- Large features can be split into multiple logical production commits when safer.
+- The new release tag, or the updated `main` / `master` state, is tested before production.
+- `release/stable` stays available as a predictable rollback target.
 
 ## Full Documentation
 
 - [Workflow Guide]({{ '/workflow/' | relative_url }}) — practical release flow, branch rules, and operational process.
 - [Design Rationale]({{ '/explained/' | relative_url }}) — why the workflow works this way and what trade-offs it makes.
 - [Commands]({{ '/commands/' | relative_url }}) — copy-paste Git commands for daily use.
+
+## Author
+
+Created by **stevoh6**, based on more than decade of practical development, release, and production workflow experience.
+
+AI-assisted editing was used solely to improve the clarity and readability of this document. The underlying process model, workflow design, decisions, and release strategy were developed independently by the author and are based on real-world practice and experience.
 
 ## License
 

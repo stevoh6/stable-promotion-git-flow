@@ -6,6 +6,14 @@
 
 Stable Promotion Git Flow is a lightweight Git workflow for solo developers and small teams who want to validate release content before promotion, keep production history clean, and preserve a stable rollback path.
 
+## Why This Is Written Down
+
+Some of these ideas are common in practical release work as internal habits, conventions, or release routines. This exact combination, including the small operational details that make it repeatable, is often not written down as a compact, reusable workflow.
+
+This document defines that specific variant and makes its trade-offs explicit. It combines release validation, clean production history, stable rollback, and selected operational details based on practical experience.
+
+The goal is to make the workflow easier to communicate, evaluate, and apply consistently.
+
 ## Website
 
 GitHub Pages version:
@@ -15,12 +23,6 @@ https://stevoh6.github.io/stable-promotion-git-flow/
 ```
 
 The website is generated from [`docs/`](docs/). The same documentation can be read directly on GitHub. Command examples are included in the operational workflow.
-
-## Documentation
-
-- [Workflow Guide](docs/workflow.md) — operational workflow, rules, and commands.
-- [Design Rationale](docs/explained.md) — reasoning, trade-offs, and design principles.
-- [Commands cheatsheet](docs/commands.md) — compact command reference.
 
 ## Core Flow
 
@@ -72,6 +74,11 @@ reset/recreate staging for next release if needed
 - The new release tag, or the updated `main` / `master` state, is tested before production.
 - `release/stable` stays available as a predictable rollback target.
 
+## Documentation
+
+- [Workflow Guide](docs/workflow.md) — operational workflow, rules, and commands.
+- [Design Rationale](docs/explained.md) — reasoning, trade-offs, and design principles.
+- [Commands cheatsheet](docs/commands.md) — compact command reference.
 
 ## Author
 
